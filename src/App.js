@@ -11,7 +11,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to LCD Refactor - By Nelson Alberto</h1>
-          <a href='https://github.com/chiruza/lcdrefactor'>Codigo en github</a>
+          <h3>Encuentra el codigo en mi <a href='https://github.com/chiruza/lcdrefactor'>github</a></h3>
         </header>
         <div className="App-intro">
           <Main />

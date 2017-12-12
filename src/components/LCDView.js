@@ -8,7 +8,7 @@ export default class LCDView extends Component {
         return num.reduce((prev, next) => {
             var char = Number.hasTop(parseInt(next)) ? '-' : ' '
             var text = Array(size + 1).join(char)
-            return `${prev} ${text} `
+            return `${prev} ${text} ` + ' '
         }, '')
     }
 
@@ -18,7 +18,7 @@ export default class LCDView extends Component {
             var endChar = Number.hasTopRight(parseInt(next)) ? '|' : ' '
             var text = Array(size + 1).join(' ')
 
-            return `${prev}${beginChar}${text}${endChar}`
+            return `${prev}${beginChar}${text}${endChar}` + ' '
         }, '')
     }
 
@@ -26,7 +26,7 @@ export default class LCDView extends Component {
         return num.reduce((prev, next) => {
             var char = Number.hasMiddle(parseInt(next)) ? '-' : ' '
             var text = Array(size + 1).join(char)
-            return `${prev} ${text} `
+            return `${prev} ${text} ` + ' '
         }, '')
     }
 
@@ -36,7 +36,7 @@ export default class LCDView extends Component {
             var endChar = Number.hasBottomRight(parseInt(next)) ? '|' : ' '
             var text = Array(size + 1).join(' ')
 
-            return `${prev}${beginChar}${text}${endChar}`
+            return `${prev}${beginChar}${text}${endChar}` + ' '
         }, '')
     }
 
@@ -44,7 +44,7 @@ export default class LCDView extends Component {
         return num.reduce((prev, next) => {
             var char = Number.hasBottom(parseInt(next)) ? '-' : ' '
             var text = Array(size + 1).join(char)
-            return `${prev} ${text} `
+            return `${prev} ${text} ` + ' '
         }, '')
     }
 

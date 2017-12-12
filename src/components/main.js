@@ -46,6 +46,10 @@ export default class Main extends Component {
             </div>
         ) : (
                 <div className="main-app">
+                    <div style={{ paddingBottom: '2rem' }}>
+                        Ingrese las lineas en convencion [tamaño(0-10)],[numero] submit <br />
+                        Ingrese 0,0 submit para terminar
+                    </div>
                     {
                         lines.map((line, i) => (<div key={i}>
                             <div>{line}</div>
